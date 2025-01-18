@@ -1,0 +1,1 @@
+gcc naive_softmax.c -o naive_softmax -lm #linking math library
