@@ -202,8 +202,8 @@ int main(){
 
     cudaEventRecord(start);
     int threadsPerBlock = maxThreadsPerBlock;
-    int blocksPerGrid = (cols + threadsPerBlock - 1) / threadsPerBlock;
-    printf("blocksPerGrid: %d\n", blocksPerGrid);
+    int blocksPerGrid = 1024;
+    printf("threadsPerBlock: %d\n", threadsPerBlock);
     safeSoftmaxOnlineNorm<<<blocksPerGrid,threadsPerBlock>>>(inputMatrix_d,rows, cols, resultMatrix_d);
     cudaEventRecord(stop);
     cudaEventSynchronize(stop);
