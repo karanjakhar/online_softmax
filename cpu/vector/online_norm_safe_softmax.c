@@ -33,6 +33,9 @@ void print_array(float * arr, int num_elements){
     printf("\n");
 }
 
+
+
+
 void main(){
     float inputMatrix[5] = {940005.5, 940004.9, 940003.0, 940002.1, 940001.4};
     int num_elements = sizeof(inputMatrix)/ sizeof(inputMatrix[0]);
